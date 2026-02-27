@@ -1,0 +1,14 @@
+title: Joyce Adhiambo
+description: Geospatial & Data Portfolio
+
+url: https://jdaonyango.github.io
+baseurl: ""
+
+remote_theme: chrisbobbe/jekyll-theme-prologue
+
+collections: [sections]
+
+avatar: assets/images/avatar.jpg
+
+cover-photo: assets/images/banner.jpg
+cover-photo-alt: Nairobi skyline at sunset
