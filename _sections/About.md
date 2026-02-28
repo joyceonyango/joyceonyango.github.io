@@ -1,7 +1,7 @@
 ---
 title: About Me
 icon: fa-user
-order: 2
+order: 3
 ---
 
 <a href="#" class="image featured"> </a>

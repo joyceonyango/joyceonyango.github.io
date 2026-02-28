@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 icon: fa-th
-order: 3
+order: 4
 ---
 
 <p>

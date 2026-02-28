@@ -4,7 +4,7 @@ cover-photo: assets/images/banner.jpg
 cover-photo-alt: "Banner"
 auto-header: none
 icon: fa-comment
-order: 1
+order: 2
 ---
 
 ## Hi! I'm Joyce.

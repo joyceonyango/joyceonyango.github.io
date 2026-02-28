@@ -63,8 +63,10 @@ github_url: https://github.com/joyceonyango
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
-collections: [sections]
+remote_theme: chrisbobbe/jekyll-theme-prologue
+
+plugins:
+  - jekyll-remote-theme
 
 # ─────────────────────────────────────────
 #  Navigation  (mirrors the sidebar links)
@@ -86,9 +88,9 @@ nav:
    # Build settings
 markdown: kramdown
 highlighter: rouge
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+
+remote_theme: chrisbobbe/jekyll-theme-prologue
+collections: [sections]
 
 exclude:
   - Gemfile
@@ -96,4 +98,3 @@ exclude:
   - README.md
   - node_modules
   - vendor
- 

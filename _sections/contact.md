@@ -1,6 +1,6 @@
 ---
 title: Contact
-order: 4
+order: 5
 ---
 
 <div class="contact-list">
