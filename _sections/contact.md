@@ -16,7 +16,7 @@ order: 4
     <span class="contact-icon email-icon">
       <i class="fas fa-envelope"></i>
     </span>
-    <a href="mailto:hello@joyce-onyango.com">hello@joyce-onyango.com</a>
+    <a href="mailto:joycedefense1@gmail.com">joycedefense1@gmail.com</a>
   </div>
 
   <div class="contact-item">
