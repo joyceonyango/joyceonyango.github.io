@@ -6,22 +6,12 @@ order: 2
 
 <a href="#" class="image featured"> </a>
 
-<p>
-  👋 Hi, I'm <strong>Joyce Onyango</strong>.
-</p>
+<p>I'm a Geospatial Data Scientist and GIS Developer currently completing my MSc in Geoinformatics at the University of Pretoria. I'm passionate about transforming complex spatial datasets into actionable insights that support smarter, evidence-based decision-making across sectors like conservation, infrastructure, and policy.</p>
 
-<p>
-  I’m a data professional passionate about using data to solve real-world problems 
-  and support smarter decision-making. I’m actively open to 
-  <strong>Data Analyst and Data Scientist roles</strong>, where I can apply strong 
-  analytical thinking, structured problem solving, and technical skills to uncover 
-  insights that drive business or strategic impact.
-</p>
+<p>My work sits at the intersection of geospatial analysis, machine learning, and interactive data visualisation. I build automated pipelines, predictive models, and real-time tools using Python, ArcGIS, QGIS, and cloud platforms — turning raw spatial data into clarity for both technical and non-technical stakeholders.</p>
 
-<p>
-  I focus on moving from <strong>raw data → meaningful insight → informed decision</strong>.
-</p>
+<p>I move from raw spatial data → automated analysis → real-world decisions.</p>
 
-<p>
-  📫 Open to full-time roles, collaborations, and impact-driven data projects.
-</p>
+<p>I'm actively open to Geospatial Data Scientist, GIS Developer, and Spatial Analyst roles — especially in teams working on conservation, infrastructure, urban planning, or policy-driven impact.</p>
+
+<p>Open to full-time roles, graduate positions, internships, and impact-driven spatial data collaborations.</p>
