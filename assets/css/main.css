@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  /* ── Page wrapper ─────────────────────────────── */
+  .page {
+    @apply max-w-2xl mx-auto px-6 py-10;
+  }
+
+  /* ── Section heading ──────────────────────────── */
+  .section-heading {
+    @apply text-lg font-bold mb-1;
+  }
+
+  /* ── Muted/secondary text ─────────────────────── */
+  .subtext {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  /* ── Tech/skill tag pill ──────────────────────── */
+  .tag {
+    @apply inline-block text-xs font-medium
+           bg-gray-100 dark:bg-gray-800
+           text-gray-600 dark:text-gray-300
+           border border-gray-200 dark:border-gray-700
+           rounded px-2.5 py-1
+           transition-colors duration-150;
+  }
+
+  /* ── Button-style tag (social links etc) ─────── */
+  .tag-btn {
+    @apply inline-flex items-center gap-1.5 text-xs font-medium
+           bg-gray-100 dark:bg-gray-800
+           text-gray-600 dark:text-gray-300
+           border border-gray-200 dark:border-gray-700
+           rounded-full px-3 py-1.5
+           transition-colors duration-150
+           hover:border-green-500 hover:text-green-600 dark:hover:text-green-400;
+  }
+
+  /* ── Project / card block ─────────────────────── */
+  .project {
+    @apply bg-white dark:bg-gray-900
+           border border-gray-200 dark:border-gray-800
+           rounded-xl p-5
+           transition-colors duration-150;
+  }
+
+  /* ── Sticky nav wrapper ───────────────────────── */
+  .frozen {
+    @apply sticky top-0 z-50
+           bg-white dark:bg-gray-950
+           border-b border-gray-200 dark:border-gray-800
+           backdrop-blur-sm;
+  }
+
+  /* ── Header inner layout ──────────────────────── */
+  header {
+    @apply max-w-2xl mx-auto px-6 py-3
+           flex items-center justify-between;
+  }
+
+  header nav {
+    @apply flex items-center gap-1;
+  }
+
+  /* ── Desktop nav links ────────────────────────── */
+  .desktop-nav {
+    @apply hidden sm:flex items-center gap-1;
+  }
+
+  .desktop-nav a {
+    @apply text-sm font-medium text-gray-500 dark:text-gray-400
+           hover:text-gray-900 dark:hover:text-white
+           px-3 py-1.5 rounded-lg
+           transition-colors duration-150;
+  }
+
+  /* ── Mobile burger button ─────────────────────── */
+  .burgers {
+    @apply flex flex-col justify-center gap-1.5 w-8 h-8 cursor-pointer sm:hidden;
+  }
+
+  .burgers .bar1,
+  .burgers .bar2 {
+    @apply block h-0.5 w-5 bg-current rounded transition-all duration-200;
+  }
+
+  .burgers.closed .bar1 {
+    @apply rotate-45 translate-y-2;
+  }
+
+  .burgers.closed .bar2 {
+    @apply -rotate-45 -translate-y-0;
+  }
+
+  /* ── Mobile nav dropdown ──────────────────────── */
+  .mobile-nav {
+    @apply absolute top-full left-0 right-0
+           bg-white dark:bg-gray-950
+           border-b border-gray-200 dark:border-gray-800
+           flex-col gap-1 px-6 py-3 sm:hidden;
+  }
+
+  .mobile-nav a {
+    @apply block text-sm font-medium text-gray-500 dark:text-gray-400
+           hover:text-gray-900 dark:hover:text-white
+           py-2 transition-colors duration-150;
+  }
+
+  /* ── Dark mode toggle button ──────────────────── */
+  .theme-toggle,
+  .round-button {
+    @apply p-1.5 rounded-lg
+           text-gray-500 dark:text-gray-400
+           hover:bg-gray-100 dark:hover:bg-gray-800
+           transition-colors duration-150;
+  }
+
+  .theme-toggle svg,
+  .round-button svg {
+    @apply w-5 h-5;
+  }
+
+  /* ── No underline utility ─────────────────────── */
+  .underline-none {
+    @apply no-underline;
+  }
+
+  /* ── Animated underline ───────────────────────── */
+  .underline-animate {
+    @apply relative;
+  }
+
+  .underline-animate::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-px bg-current transition-all duration-200;
+  }
+
+  .underline-animate:hover::after {
+    @apply w-full;
+  }
+
+}

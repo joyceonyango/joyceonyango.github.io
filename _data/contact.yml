@@ -1,0 +1,22 @@
+heading: Contact
+subtext: Ways to reach me
+intro: >
+  I'm open to roles in spatial data science, GIS development, remote sensing, and data
+  analytics — in South Africa, Kenya, or remote. If you'd like to connect or have a
+  project in mind, please don't hesitate to reach out.
+
+links:
+  - label: LinkedIn
+    icon: fab fa-linkedin-in
+    display: linkedin.com/in/joyce-onyango
+    url: https://www.linkedin.com/in/joyce-onyango-18b65b184/
+
+  - label: Email
+    icon: fas fa-envelope
+    display: joycedefense1@gmail.com
+    url: mailto:joycedefense1@gmail.com
+
+  - label: GitHub
+    icon: fab fa-github
+    display: github.com/joyceonyango
+    url: https://github.com/joyceonyango

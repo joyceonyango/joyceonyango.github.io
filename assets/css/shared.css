@@ -1,0 +1,209 @@
+---
+---
+/* =======================================================
+   shared.css — Joyce Onyango Portfolio
+   ======================================================= */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── LIGHT MODE (default) ────────────────────────────── */
+:root {
+  --font-sans:  'Dosis', sans-serif;
+  --font-serif: 'Noto Serif', Georgia, serif;
+
+  --bg:           #E3DCD2;
+  --surface-1:    #d9d2c7;
+  --surface-2:    #cec6ba;
+  --surface-3:    #c2baad;
+
+  --border:       #b5ad9f;
+  --border-light: #a8a092;
+
+  --text-bright:  #100C0D;
+  --text-body:    #1a1618;
+  --text-muted:   #2e2a2b;
+  --text-dim:     #5a5355;
+
+  --accent:       #013328;
+  --accent-light: #015c47;
+  --accent-dark:  #011f18;
+  --accent-alt1:  #CC8B65;
+  --accent-alt2:  #100C0D;
+  --accent-pale:  rgba(1,51,40,0.10);
+
+  --max-w: 720px;
+}
+
+/* ── DARK MODE (html.dark override) ─────────────────── */
+html.dark {
+  --bg:           #100C0D;
+  --surface-1:    #161213;
+  --surface-2:    #1c1718;
+  --surface-3:    #251f20;
+
+  --border:       #2e2829;
+  --border-light: #3a3435;
+
+  --text-bright:  #E3DCD2;
+  --text-body:    #cec6ba;
+  --text-muted:   #b5ad9f;
+  --text-dim:     #7a7470;
+
+  --accent:       #015c47;
+  --accent-light: #CC8B65;
+  --accent-dark:  #013328;
+  --accent-alt1:  #E3DCD2;
+  --accent-alt2:  #CC8B65;
+  --accent-pale:  rgba(1,92,71,0.15);
+}
+
+html {
+  font-size: 19px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text-muted);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+a { color: inherit; text-decoration: none; }
+strong { color: var(--text-bright); font-weight: 600; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Sticky Nav ──────────────────────────────────────── */
+.frozen {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(227,220,210,0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s ease;
+}
+
+html.dark .frozen {
+  background: rgba(16,12,13,0.92);
+}
+
+/* ── Main ────────────────────────────────────────────── */
+main {
+  flex: 1;
+  max-width: var(--max-w);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* ── Nav inner ───────────────────────────────────────── */
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* ── Page hero ───────────────────────────────────────── */
+.page-hero {
+  padding: 52px 0 32px;
+  border-bottom: 1px solid var(--border);
+  animation: fadeUp 0.45s ease both;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  margin-bottom: 14px;
+}
+
+.page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.page-hero p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 540px;
+}
+
+/* ── Sections ────────────────────────────────────────── */
+section { animation: fadeUp 0.4s ease both; }
+.section-header { margin-bottom: 22px; }
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}
+.section-sub { font-size: 0.8rem; color: var(--text-dim); }
+
+/* ── Tags ────────────────────────────────────────────── */
+.tag {
+  display: inline-block;
+  font-size: 0.76rem;
+  background: var(--surface-3);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 10px;
+  transition: border-color 0.15s, color 0.15s;
+}
+.tag:hover { border-color: var(--accent); color: var(--accent-light); }
+
+/* ── Footer ──────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+footer span { font-size: 0.8rem; color: var(--text-dim); }
+.footer-links { display: flex; gap: 18px; }
+.footer-links a { font-size: 0.8rem; color: var(--text-dim); transition: color 0.15s; }
+.footer-links a:hover { color: var(--accent-light); }
+
+/* ── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--surface-3); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }

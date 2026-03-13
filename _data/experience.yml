@@ -1,0 +1,27 @@
+heading: Work Experience
+subtext: Organisations I've contributed to
+
+jobs:
+  - org: Esri Eastern Africa
+    role: GIS Intern
+    duration: 3 months
+    description: >
+      Worked within the Esri ecosystem across Eastern Africa — supporting spatial data
+      workflows, ArcGIS platform tooling, and client-facing GIS solutions for regional clients.
+    tags: [ArcGIS, Spatial Data, GIS Workflows]
+
+  - org: Swift Geospatial
+    role: "GIS Analyst — Fixed-term Contract"
+    duration: 2 months
+    description: >
+      Delivered geospatial analysis and data pipeline work on a fixed-term basis, applying
+      Python, ArcGIS, and QGIS to client project requirements.
+    tags: [Python, ArcGIS, QGIS, Data Pipelines]
+
+  - org: Gloceps
+    role: Web Design & IT Intern
+    duration: 6 months
+    description: >
+      Supported web design, IT infrastructure, and digital operations — building a foundation
+      in full-stack thinking and client-facing delivery.
+    tags: [Web Design, IT Support, JavaScript]

@@ -1,0 +1,52 @@
+heading: Projects
+subtext: Selected data and geospatial analytics work
+github_url: https://github.com/joyceonyango
+
+items:
+  - id: conservation
+    title: Conservation Funding in Africa
+    short: >
+      Geospatial analysis of conservation funding distribution across Africa — evaluating
+      whether funding aligns with ecological value across all 53 African countries.
+    tags: [Python, GeoPandas, Rasterio, Zonal Statistics, Matplotlib, Jupyter]
+    details:
+      - heading: Overview
+        text: >
+          This project evaluates whether conservation funding across Africa is aligned with
+          ecological value, combining biodiversity records, funding data, and geospatial
+          biodiversity intactness metrics across all 53 African countries.
+      - heading: Problem Statement
+        text: >
+          Conservation funding is unevenly distributed. The project answers: Are
+          biodiversity-rich countries receiving adequate funding? Does funding align with
+          biodiversity intactness? Which countries should be prioritised?
+      - heading: Key Findings
+        text: >
+          Mean funding per country is $8.34M but heavily right-skewed. Several
+          high-biodiversity countries are significantly underfunded.
+    table:
+      headers: [Country, Species Count, Funding (M USD)]
+      rows:
+        - [Ethiopia, 70, 4.01]
+        - [Zimbabwe, 60, 4.07]
+        - [Tunisia,  59, 0.00]
+        - [Uganda,   58, 2.86]
+        - [Nigeria,  57, 2.64]
+    github_url: https://github.com/joyceonyango/Conservation-Funding-in-Africa
+
+  - id: walkability
+    title: "Urban Walkability & Green Space Accessibility — Tshwane"
+    short: >
+      MSc research applying deep learning and computer vision to Google Street View and
+      Cyclomedia imagery to analyse walkability and temporal accessibility to green public
+      open spaces in the City of Tshwane.
+    tags: [TensorFlow, PyTorch, Computer Vision, Street View API, PostGIS, QGIS]
+    details:
+      - heading: Overview
+        text: >
+          This MSc thesis investigates geospatial accessibility to green public open spaces
+          and community amenities in the City of Tshwane, using a walkability and temporal
+          analysis framework. Street-level imagery is processed using deep learning scene
+          classification models to assess pedestrian environment quality at scale.
+      - heading: Status
+        text: Draft 1 submitted to supervisors — November 2025.

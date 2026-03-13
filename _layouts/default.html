@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}Joyce Onyango</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+
+  <link rel="stylesheet" href="{{ '/assets/css/shared.css' | relative_url }}" />
+  <script>
+    /* Apply saved theme BEFORE page renders to prevent flash */
+    (function() {
+      var saved = localStorage.getItem("theme");
+      /* Default to dark if nothing saved */
+      if (saved === "dark" || saved === null) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Preahvihear&display=swap" rel="stylesheet">
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function isDark() {
+        return document.documentElement.classList.contains("dark");
+      }
+
+      function applyTheme(dark) {
+        var sun  = document.getElementById("sun");
+        var moon = document.getElementById("moon");
+        if (dark) {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+          if (sun)  sun.style.display  = "block";
+          if (moon) moon.style.display = "none";
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+          if (sun)  sun.style.display  = "none";
+          if (moon) moon.style.display = "block";
+        }
+      }
+
+      /* Sync icon with current state on load */
+      applyTheme(isDark());
+
+      /* Toggle on click */
+      var btn = document.getElementById("dark-toggle");
+      if (btn) {
+        btn.addEventListener("click", function() {
+          applyTheme(!isDark());
+        });
+      }
+    });
+  </script>
+</body>
+</html>

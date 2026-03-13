@@ -1,0 +1,43 @@
+title: Joyce Onyango
+email: joycedefense1@gmail.com
+description: >-
+  My name is Joyce Onyango. I am Geospatial Data Scientist and MSc Geoinformatics
+  candidate at the University of Pretoria. I specialise in spatial data science,
+  GIS development, remote sensing, and applied machine learning.
+
+baseurl: ""
+url: "https://joyceonyango.github.io"
+google_analytics: ""
+
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+plugins:
+  - jekyll-sitemap
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - assets/css/main.css
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - postcss.config.js
+  - tailwind.config.js
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE

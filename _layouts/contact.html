@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<style>
+  .availability-card { background: var(--surface-2); border: 1px solid var(--accent-dark); border-radius: 10px; padding: 20px 24px; display: flex; align-items: center; gap: 14px; }
+  .avail-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent-light); flex-shrink: 0; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+  .avail-text h3 { font-size: 0.88rem; font-weight: 600; color: var(--text-bright); margin-bottom: 3px; }
+  .avail-text p { font-size: 0.82rem; color: var(--text-dim); }
+  .channels { display: flex; flex-direction: column; gap: 12px; }
+  .channel-row { background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; transition: border-color 0.15s, transform 0.15s; }
+  .channel-row:hover { border-color: var(--accent); transform: translateX(3px); }
+  .channel-icon { width: 42px; height: 42px; border-radius: 8px; background: var(--surface-3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent-light); transition: background 0.15s; }
+  .channel-row:hover .channel-icon { background: var(--accent-pale); }
+  .channel-info { flex: 1; }
+  .channel-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 2px; }
+  .channel-value { font-size: 0.9rem; color: var(--text-bright); font-weight: 500; }
+  .channel-arrow { font-size: 0.9rem; color: var(--accent-light); }
+  .location-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+  .location-card h3 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 14px; }
+  .loc-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--text-muted); }
+  .loc-row:last-child { border-bottom: none; }
+  .loc-icon { font-size: 1rem; }
+  .cta-banner { background: linear-gradient(135deg, var(--accent-dark), var(--accent)); border-radius: 10px; padding: 32px; text-align: center; }
+  .cta-banner h3 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .cta-banner p { font-size: 0.88rem; color: rgba(255,255,255,0.8); margin-bottom: 20px; }
+  .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent-dark); font-size: 0.85rem; font-weight: 700; padding: 11px 24px; border-radius: 6px; transition: transform 0.15s, box-shadow 0.15s; }
+  .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.25); }
+</style>
+{{ content }}

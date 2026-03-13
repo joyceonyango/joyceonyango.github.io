@@ -1,0 +1,78 @@
+# ── About Me ──────────────────────────────────────────────────
+about:
+  heading: About Me
+  subtext: A bit about who I am
+  bio:
+    - >
+      Geospatial Data Scientist, completing my MSc in Geoinformatics at the University
+      of Pretoria. I build pipelines and models in Python, ArcGIS, and QGIS. My work
+      follows a simple path: raw spatial data → automated analysis → real-world decisions.
+    - >
+      I have worked across conservation, infrastructure, and urban planning — or anywhere
+      spatial data can sharpen how decisions get made. Open to geospatial data science,
+      GIS development, and spatial analyst roles whether full-time, graduate, or internship.
+
+insights:
+  heading: Quick Insights
+  subtext: Bits about my background
+  items:
+    - text: "MSc Geoinformatics (in progress) — <strong>University of Pretoria</strong>. Thesis: deep learning & computer vision applied to urban walkability and green space accessibility in Tshwane."
+    - text: "BSc Honours in Geoinformatics — <strong>University of Pretoria</strong>."
+    - text: "Internship experience at <strong>Esri Eastern Africa</strong>, <strong>Swift Geospatial</strong>, and <strong>Gloceps</strong>."
+    - text: "Right to work in <strong>South Africa</strong> and <strong>Kenya</strong>; open to remote-first global roles."
+    - text: "Portfolio: <a href='https://joyceonyango.github.io' target='_blank' class='underline-animate text-green-700 dark:text-green-300'>joyceonyango.github.io</a>"
+
+# ── My Profile ────────────────────────────────────────────────
+profile:
+  heading: My Profile
+  subtext: Where spatial thinking meets real-world impact
+  intro: >
+    I'm driven by the intersection of spatial analysis, machine learning, and applied
+    research — from automated GIS pipelines to deep learning models that assess walkability
+    from street-level imagery. Through my internships and MSc research in Tshwane, I've
+    seen firsthand how spatial data surfaces patterns invisible to the naked eye and
+    translates them into evidence that moves policy, planning, and investment.
+
+  traits:
+    heading: Who I Am
+    items:
+      - icon: "🗺️"
+        title: Spatial Thinker
+        text: Skilled in GIS, remote sensing, and spatial analysis. I use maps to reveal patterns, risks, and opportunities invisible in raw data.
+      - icon: "🔬"
+        title: Research-Driven
+        text: My MSc research applies deep learning and computer vision to urban walkability, bridging academic rigour and real-world impact.
+      - icon: "⚙️"
+        title: Data Engineer
+        text: Committed to end-to-end geospatial pipelines — from raw satellite and street-level imagery to clean, production-ready spatial outputs.
+      - icon: "🌍"
+        title: Globally Minded
+        text: Adaptable across African and global contexts, with professional experience in Kenya, South Africa, and remote-first environments.
+
+  drives:
+    heading: What Drives Me
+    items:
+      - label: Evidence-based analysis
+        text: I ground every map, model, and recommendation in real spatial data — from fieldwork to Google Earth Engine.
+      - label: Accessible science
+        text: Geospatial insight should reach communities, not just technical audiences. I design outputs non-specialists can act on.
+      - label: Continuous learning
+        text: From PyTorch scene classifiers to PostGIS spatial queries, I actively seek tools that deepen my capabilities.
+      - label: Cross-sector impact
+        text: "Conservation, urban planning, agriculture, infrastructure — spatial data is universal, and I thrive at the intersection."
+
+  quote:
+    text: "The goal is to turn data into information, and information into insight."
+    author: Carly Fiorina
+
+# ── Technical Stack ───────────────────────────────────────────
+stack:
+  heading: Technical Stack
+  subtext: Tools and technologies I work with
+  groups:
+    - label: Spatial & GIS
+      items: [ArcGIS Pro, QGIS, Google Earth Engine, PostGIS, GeoPandas, Rasterio, Leaflet.js]
+    - label: Machine Learning & Data
+      items: [Python, TensorFlow, PyTorch, Scikit-learn, Pandas, SQL]
+    - label: Development & Infrastructure
+      items: [GeoDjango, React, Docker, Kubernetes, Git, GitHub Actions]
