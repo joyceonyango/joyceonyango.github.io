@@ -1,4 +1,4 @@
-# Joyce Onyango — Personal Portfolio
+# Joyce Onyango - Personal Portfolio
 
 Hey! This is the source code for my personal portfolio site at [joyceonyango.github.io](https://joyceonyango.github.io).
 
