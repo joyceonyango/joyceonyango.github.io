@@ -1,78 +1,25 @@
+# Joyce Onyango — Personal Portfolio
 
-# Joyce Onyango — Portfolio Files
+Hey! This is the source code for my personal portfolio site at [joyceonyango.github.io](https://joyceonyango.github.io).
 
-## What's in this folder
+I'm a Geospatial Data Scientist and MSc Geoinformatics candidate at the University of Pretoria. This site is where I share my work, background, and the kinds of problems I enjoy solving — from conservation funding analysis across Africa to deep learning models for urban walkability in Tshwane.
 
-```
-jekyll-theme/
-│
-├── index.html          ← Standalone home page (goes in repo ROOT)
-├── about.html          ← Standalone about page (goes in repo ROOT)
-├── experience.html     ← Standalone experience page (goes in repo ROOT)
-├── projects.html       ← Standalone projects page (goes in repo ROOT)
-├── contact.html        ← Standalone contact page (goes in repo ROOT)
-│
-├── _data/
-│   ├── nav.yml         ← Fixed: /experience now has leading /
-│   ├── experience.yml  ← Job data for Jekyll theme
-│   ├── projects.yml    ← Project data for Jekyll theme
-│   └── stack.yml       ← Tech stack grouped by category
-│
-├── _includes/
-│   ├── header.html     ← Nav with dark mode toggle + burger menu
-│   ├── footer.html     ← Footer (Joyce Onyango, open source link)
-│   ├── job.html        ← Renders one job from experience.yml
-│   ├── project.html    ← Renders one project from projects.yml
-│   ├── building_svg.html  ← Fallback icon for jobs with no logo
-│   ├── github_svg.html
-│   ├── linkedin_svg.html
-│   ├── link_svg.html
-│   └── right_arrow.html
-│
-├── _layouts/
-│   └── default.html    ← Fixed: removed Gourav Khunger branding
-│                          Fixed: no more @gourav_khunger Twitter
-│                          Fixed: og:site_name is now "Joyce Onyango"
-│
-└── _pages/
-    ├── index.html      ← Jekyll version of home (uses Liquid + layout)
-    ├── about.html      ← Jekyll version of about
-    ├── experience.html ← Jekyll version of experience (loops experience.yml)
-    ├── projects.html   ← Jekyll version of projects (loops projects.yml)
-    └── contact.html    ← Jekyll version of contact
-```
+---
 
-## Fixes applied
+## What the site covers
 
-1. **Email links** — All Cloudflare `/cdn-cgi/l/email-protection#...` obfuscation
-   removed. All email links now point to `mailto:joycedefense1@gmail.com`.
+**Home** — A quick intro to who I am, what I do, and the tools I work with. If you've landed here and want to know whether I'm the right person for a role or collaboration, this is where to start.
 
-2. **nav.yml** — `/experience` now has the leading `/` (was `experience`).
+**About** — My full background: where I studied, what drives my approach to data and geospatial work, and a breakdown of my technical stack across GIS, data science, web development, and databases.
 
-3. **_layouts/default.html** — Removed all Gourav Khunger references:
-   - `og:site_name` → "Joyce Onyango"
-   - Twitter meta → @joyceonyango
-   - Profile OG tags removed
-   - GA script wrapped to skip if `google_analytics` is empty
+**Experience** — A timeline of my professional roles at Esri Eastern Africa, Gloceps, and Swift Geospatial — with the actual work I did, not just job titles.
 
-## How to deploy
+**Projects** — Selected data and geospatial projects, including my conservation funding analysis across 53 African countries and my MSc thesis on urban walkability using computer vision and street-level imagery.
 
-### Option A — Standalone HTML (simplest, works right now)
-Copy `index.html`, `about.html`, `experience.html`, `projects.html`, `contact.html`
-and `shared.css` to the **root** of your repo. GitHub Pages will serve them directly
-without any build step.
+**Contact** — How to reach me. I'm open to full-time roles, contract work, and research collaborations in data science, GIS development, and applied spatial analysis.
 
-### Option B — Jekyll theme (full setup)
-Copy all files into your repo keeping the folder structure intact.
-The standalone HTML pages in root serve the actual site; the Jekyll `_pages/`
-and `_data/` files power the theme's dynamic layout system.
+---
 
-Make sure your GitHub Actions workflow has these steps in order:
-1. npm install
-2. npm run build  ← compiles Tailwind → assets/css/theme.css
-3. bundle exec jekyll build
-4. Deploy _site/ to gh-pages branch
+## Contact
 
-## Shared.css
-The standalone HTML pages all require `shared.css` in the repo root.
-This file was created in the previous session — make sure it's committed.
+If you'd like to work together or just say hello — [joycedefense1@gmail.com](mailto:joycedefense1@gmail.com) or find me on [LinkedIn](https://www.linkedin.com/in/joyce-onyango-18b65b184/).
