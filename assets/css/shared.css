@@ -31,6 +31,11 @@
   --accent-alt2:  #100C0D;
   --accent-pale:  rgba(1,51,40,0.10);
 
+  --terra:        #C4622D;
+  --terra-light:  #D97848;
+  --terra-dark:   #9E4A1E;
+  --terra-pale:   rgba(196,98,45,0.12);
+
   --max-w: 720px;
 }
 
@@ -55,6 +60,11 @@ html.dark {
   --accent-alt1:  #E3DCD2;
   --accent-alt2:  #CC8B65;
   --accent-pale:  rgba(1,92,71,0.15);
+
+  --terra:        #C4622D;
+  --terra-light:  #D97848;
+  --terra-dark:   #9E4A1E;
+  --terra-pale:   rgba(196,98,45,0.15);
 }
 
 html {
@@ -173,12 +183,12 @@ section { animation: fadeUp 0.4s ease both; }
   font-size: 0.76rem;
   background: var(--surface-3);
   color: var(--text-dim);
-  border: 1px solid var(--border);
+  border: 1px solid var(--terra);
   border-radius: 4px;
   padding: 3px 10px;
   transition: border-color 0.15s, color 0.15s;
 }
-.tag:hover { border-color: var(--accent); color: var(--accent-light); }
+.tag:hover { border-color: var(--terra-light); color: var(--terra-light); }
 
 /* ── Footer ──────────────────────────────────────────── */
 footer {
