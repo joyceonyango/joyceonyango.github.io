@@ -19,7 +19,7 @@ insights:
     - text: "MSc Geoinformatics (in progress) — <strong>University of Pretoria</strong>. Thesis: deep learning & computer vision applied to urban walkability and green space accessibility in Tshwane."
     - text: "BSc Honours in Geoinformatics — <strong>University of Pretoria</strong>."
     - text: "Internship experience at <strong>Esri Eastern Africa</strong>, <strong>Swift Geospatial</strong>, and <strong>Gloceps</strong>."
-    - text: "Right to work in <strong>South Africa</strong> and <strong>Kenya</strong>; open to remote-first global roles."
+    - text: "Right to work in <strong>Kenya</strong>; open to remote roles globally."
     - text: "Portfolio: <a href='https://joyceonyango.github.io' target='_blank' class='underline-animate text-green-700 dark:text-green-300'>joyceonyango.github.io</a>"
 
 # ── My Profile ────────────────────────────────────────────────
@@ -44,10 +44,10 @@ profile:
         text: My MSc research applies deep learning and computer vision to urban walkability, bridging academic rigour and real-world impact.
       - icon: "⚙️"
         title: Data Engineer
-        text: Committed to end-to-end geospatial pipelines — from raw satellite and street-level imagery to clean, production-ready spatial outputs.
+        text: Committed to end-to-end geospatial pipelines, from raw satellite and street-level imagery to clean, production-ready spatial outputs.
       - icon: "🌍"
         title: Globally Minded
-        text: Adaptable across African and global contexts, with professional experience in Kenya, South Africa, and remote-first environments.
+        text: Adaptable across African and global contexts, with professional experience in Kenya, South Africa, and remote environments.
 
   drives:
     heading: What Drives Me
