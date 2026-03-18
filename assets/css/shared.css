@@ -106,6 +106,7 @@ html, body {
   display: flex;
   flex-direction: column;
   transition: background 0.2s ease, color 0.2s ease;
+  width: 100%;
 }
 
 a {
@@ -125,8 +126,10 @@ strong { color: var(--text-bright); font-weight: 600; }
 .site-content,
 main {
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 4rem;
+  min-width: 0;
 }
 
 /* ── Sticky nav ────────────────────────────────────────────── */
@@ -551,102 +554,9 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* ── Timeline (experience) ─────────────────────────────────── */
-.timeline {
-  position: relative;
-  padding-left: 1.5rem;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  width: 2px;
-  background: var(--border);
-}
+/* ── Timeline (experience) — defined in experience layout ── */
 
-.tl-item {
-  position: relative;
-  padding-bottom: 2.5rem;
-}
-.tl-item:last-child { padding-bottom: 0; }
-
-.tl-dot {
-  position: absolute;
-  left: -1.5rem;
-  top: 0.35rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--bg);
-  transform: translateX(-4px);
-}
-
-.tl-card {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem 1.4rem;
-}
-
-.tl-org {
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--terra);
-  margin-bottom: 0.2rem;
-}
-
-.tl-role {
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-bright);
-  margin-bottom: 0.15rem;
-}
-
-.tl-meta {
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  color: var(--text-dim);
-  margin-bottom: 0.75rem;
-}
-
-.tl-card p {
-  font-size: 0.875rem;
-  color: var(--text-body);
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* ── Timeline bullets ──────────────────────────────────────── */
-.tl-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.tl-bullets li {
-  display: grid;
-  grid-template-columns: 0.75rem 1fr;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  color: var(--text-body);
-  line-height: 1.7;
-}
-
-.tl-bullets li::before {
-  content: "▸";
-  color: var(--terra);
-  margin-top: 0.05em;
-}
+/* ── Timeline sub-elements — defined in experience layout ── */
 
 /* ── Skills bar (experience) ───────────────────────────────── */
 .skills-bar {
