@@ -42,7 +42,6 @@ main {
 /* ── Stats row ─────────────────────────────────────────── */
 .stats-row {
   display: flex;
-  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0.5rem 0 0.5rem;
@@ -186,7 +185,7 @@ main {
   gap: 0.75rem;
 }
 
-/* ── Tags row (below image, above title) ───────────────── */
+/* ── Tags row ──────────────────────────────────────────── */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -306,22 +305,37 @@ main {
 }
 .details-toggle:hover { color: var(--terra-light); }
 
-/* ── MSc thesis — full width spanning both columns ─────── */
-.project-card.full-span {
-  grid-column: auto;
-}
-.project-card.full-span .project-banner {
-  height: 200px;
-}
-.project-card.full-span .project-findings {
-  -webkit-line-clamp: 2;
+/* ── MSc thesis ────────────────────────────────────────── */
+.project-card.full-span { grid-column: auto; }
+.project-card.full-span .project-banner { height: 200px; }
+.project-card.full-span .project-findings { -webkit-line-clamp: 2; }
+
+/* ── Responsive: tablet ────────────────────────────────── */
+@media (max-width: 900px) {
+  main { padding: 0 1.5rem; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+  .project-banner { height: 180px; }
+  .project-name { font-size: 1rem; }
+  .stat-card { padding: 0.75rem 1rem; min-width: 90px; }
 }
 
-/* ── Responsive ────────────────────────────────────────── */
+/* ── Responsive: mobile ────────────────────────────────── */
 @media (max-width: 640px) {
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  main { padding: 0 1rem; }
+  .projects-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+  .project-card { min-height: unset; }
   .project-card.full-span { grid-column: 1; }
-  .project-banner { height: 180px; }
+  .project-banner { height: 200px; }
+  .card-body { padding: 1rem; }
+  .page-hero { padding: 1.5rem 0 0.75rem; }
+  .page-hero h1 { font-size: clamp(1.6rem, 8vw, 2.5rem); }
+  .stat-card { padding: 0.65rem 0.85rem; min-width: 80px; }
+  .stat-number { font-size: 1.4rem; }
+  .section-title { font-size: 1.2rem; }
+  .project-tag { font-size: 0.68rem; padding: 0.15rem 0.5rem; }
+  .view-project-btn { font-size: 0.75rem; padding: 0.45rem 0.75rem; }
+  .findings-table { font-size: 0.72rem; }
+  .findings-table th, .findings-table td { padding: 0.3rem 0.5rem; }
 }
 </style>
 
