@@ -266,6 +266,23 @@ footer {
   font-style: italic;
 }
 
+/* ── Typing cursor ─────────────────────────────────────────── */
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  background: var(--terra);
+  margin-left: 3px;
+  vertical-align: middle;
+  border-radius: 1px;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
 .hero p {
   font-size: 1.05rem;
   color: var(--text-muted);
