@@ -2,7 +2,7 @@
 
 Hey! This is the source code for my personal portfolio site at [joyceonyango.github.io](https://joyceonyango.github.io).
 
-I'm a Geospatial Data Scientist and MSc Geoinformatics candidate at the University of Pretoria. This site is where I share my work, background, and the kinds of problems I enjoy solving — from conservation funding analysis across Africa to deep learning models for urban walkability in Tshwane.
+I am  a Geospatial Data Scientist. This site is where I share my work, background, and the kinds of problems I enjoy solving. They range from conservation funding analysis across Africa to deep learning models for urban walkability in the City of Tshwane.
 
 ---
 
